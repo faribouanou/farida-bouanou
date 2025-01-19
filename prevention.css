@@ -1,93 +1,42 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
     background-color: #f4f4f4;
 }
 
-header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    border-radius: 5px;
-}
-
-h1 {
-    margin: 0;
-}
-
-h2 {
-    color: #4CAF50;
-    border-bottom: 2px solid #4CAF50;
-    padding-bottom: 5px;
-}
-
-section {
-    background-color: white;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-ul {
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-footer {
-    text-align: center;
-    font-style: italic;
-    margin-top: 20px;
-}
-/* styles.css ou nav.css */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+.container {
+    width: 100%;
+    max-width: 1200px; /* Largeur maximale */
+    padding: 0 20px; /* Padding horizontal */
 }
 
 nav {
+    width: 100%;
     background-color: #4CAF50;
+    display: flex;
+    justify-content: center; /* Centrage horizontal */
+}
+
+nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    width: 100%; /* Largeur totale */
-    margin: 0; /* Supprime les marges par défaut */
-    box-sizing: border-box; /* Inclut padding dans la largeur */
 }
 
-nav .logo a {
-    color: white;
-    font-size: 24px;
-    text-decoration: none;
-    font-weight: bold;
+main {
+    width: 100%;
+    max-width: 800px; /* Largeur du contenu */
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #e0e0e0;
+header, section, footer {
+    width: 100%;
 }
