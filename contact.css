@@ -1,0 +1,42 @@
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+label, input, textarea {
+    margin-bottom: 10px;
+}
+
+button {
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    background-image: url('votre-image-de-fond.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main {
+    background-color: rgba(0, 255, 0, 0.2); /* Vert avec 20% d'opacité */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+p, li {
+    color: black;
+    font-weight: 500; /* Légèrement plus gras pour une meilleure lisibilité */
+}
+
+h1, h2 {
+    color: #006400; /* Vert foncé pour les titres */
+}

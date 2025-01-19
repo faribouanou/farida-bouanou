@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 10;
+    padding: 0;
+}
+
+header, nav, main, footer {
+    padding: 20px
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f3f2f2;
+}
+
+
+
+
+
+
+body {
+    background-image: url('risquesnaturels.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+  
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 5px;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 30px 45px;
+    background-color: #fafdfa;
+    color: rgb(9, 77, 50);
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.nav-button:hover {
+    background-color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.nav-button:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-button {
+        width: 200px;
+        text-align: center;
+    }
+}
+
+
+h1 {
+    font-size: 4rem; /* Taille de police plus grande */
+    text-align: center; /* Centre le texte horizontalement */
+    padding: 30px 0; /* Ajoute de l'espace au-dessus et en dessous du titre */
+    color: #3e7d27; /* Couleur du texte, ajustez selon vos préférences */
+    background-color: #ffffff95;
+    font-weight: bold; /* Rend le texte en gras */
+    text-transform: uppercase; /* Met le texte en majuscules */
+    letter-spacing: 2px; /* Ajoute un espacement entre les lettres */
+    margin-bottom: 30px; /* Ajoute de l'espace sous le titre */
+    position: relative; /* Nécessaire pour l'effet de soulignement */
+}
+
+/* Ajoute un soulignement décoratif */
+h1::after {
+    content: '';
+    display: block;
+    width: 200px; /* Largeur du soulignement */
+    height: 3px; /* Épaisseur du soulignement */
+    background-color: #40c566cb; /* Couleur du soulignement, ajustez selon vos préférences */
+    margin: 20px auto 0; /* Centre le soulignement et ajoute de l'espace au-dessus */
+}
+
+/* Responsive design pour les écrans plus petits */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem; /* Taille de police légèrement réduite pour les petits écrans */
+    }
+}
+
+
+h3 {
+    text-align: center; /* Centre le texte horizontalement */
+    padding: 30px 0; /* Ajoute de l'espace au-dessus et en dessous du titre */
+    color: #ffffff; /* Couleur du texte, ajustez selon vos préférences */
+    
+}

@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #e74c3c;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.description {
+    font-style: italic;
+    border-left: 3px solid #e74c3c;
+    padding-left: 10px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+
+.risk-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .risk-image {
+        max-width: 60%;
+    }
+}
