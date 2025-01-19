@@ -60,6 +60,13 @@ h1, h2 {
     color: #006400; /* Vert foncé pour les titres */
 }
 
+nav {
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
 
 nav .logo a {
     color: white;
@@ -86,3 +93,4 @@ nav ul li a {
 nav ul li a:hover {
     color: #e0e0e0;
 }
+
