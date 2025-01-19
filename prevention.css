@@ -54,12 +54,14 @@ body {
 }
 
 nav {
-    background-color: #4CAF50!important;
+    background-color: #4CAF50;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    width: 90%;
+    width: 100%; /* Largeur totale */
+    margin: 0; /* Supprime les marges par défaut */
+    box-sizing: border-box; /* Inclut padding dans la largeur */
 }
 
 nav .logo a {
