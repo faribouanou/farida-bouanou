@@ -1,0 +1,57 @@
+nav {
+    background-color: #4CAF50;
+    width: 100%;
+    padding: 15px 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+    nav .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 15px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+}
