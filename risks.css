@@ -19,60 +19,74 @@
 .risk-button:hover {
     background-color: #0056b3;
 }
+  
 
 
 
-
-
-
-
-
-
-
-.risk-details {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    background-color: #f9f9f9;
+main {
+    background-color: rgba(0, 255, 0, 0.2); /* Vert avec 20% d'opacité */
     padding: 20px;
-    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.risk-details img {
-    max-width: 200px;
-    margin-right: 20px;
-    border-radius: 10px;
+p, li {
+    color: black;
+    font-weight: 500; /* Légèrement plus gras pour une meilleure lisibilité */
 }
 
-.risk-details ul {
-    list-style-type: disc;
-    padding-left: 20px;
+h1, h2 {
+    color: #006400; /* Vert foncé pour les titres */
+}
+
+
+.risk-icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.risk-icon {
+    width: calc(33.33% - 20px); /* Pour 3 icônes par ligne sur les grands écrans */
+    max-width: 300px;
+    aspect-ratio: 1 / 1; /* Garde l'icône carrée */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.risk-icon:hover {
+    transform: scale(1.05);
+}
+
+.risk-icon img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.risk-icon-title {
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {
-    .risk-details {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .risk-details img {
-        margin-right: 0;
-        margin-bottom: 15px;
+    .risk-icon {
+        width: calc(50% - 20px); /* 2 icônes par ligne sur les tablettes */
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 480px) {
+    .risk-icon {
+        width: 100%; /* 1 icône par ligne sur les smartphones */
+    }
+}
